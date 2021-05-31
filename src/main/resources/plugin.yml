@@ -1,0 +1,24 @@
+name: ModBlocker
+version: 1.0
+author: Solari
+main: fr.dev.solari.ModBlocker
+
+softdepend: [PlaceholderAPI]
+
+commands:
+  mb:
+    aliases: [modblocker]
+  mods:
+    aliases: [modlist]
+
+permissions:
+  mb.*:
+    default: false
+    children:
+      fmb.bypass: true
+      fmb.update_notification: true
+      fmb.main_command: true
+      fmb.reload_command: true
+      fmb.mods_command: true
+  mb.bypass:
+    default: false
